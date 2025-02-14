@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Odor Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 菜单按钮 -->
+    <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+   
+    <!-- 搜索框 -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Type anthing ex(memory:)">
+    </div>
+    
+    <script src="script.js"></script>
+
+    <!-- 文字内容 -->
+    <div class="title">Emotional</div>
+    <div class="title">odor</div>
+    <div class="title">archive</div>
+
+    <!-- SVG 扭曲效果 -->
+    <svg>
+        <filter id="distortion">
+            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.02" numOctaves="3" result="warp"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="warp" scale="10" />
+        </filter>
+    </svg>
+    
+    
+</body>
+
+</html>
